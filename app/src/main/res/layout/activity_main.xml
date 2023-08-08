@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/insta"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSTAGRAM"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:id="@+id/tv_insta"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="30sp"
+        android:paddingLeft="20dp"
+        android:id="@+id/et_email"
+        android:textStyle="bold"
+        android:hint="Mobile number or email">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:inputType="numberPassword"
+        android:id="@+id/et_password">
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_margin="20dp"
+        android:text="Log in"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/btn_login"
+        android:backgroundTint="#C3352B"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:text="Create New Account"
+        android:id="@+id/btn_forget"
+        android:textColor="@color/black"></Button>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/instagram"
+        android:layout_below="@id/tv_insta"
+        android:layout_centerHorizontal="true"></ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_forget"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Forget Password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></Button>
+</RelativeLayout>
